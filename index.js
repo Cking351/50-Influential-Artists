@@ -227,14 +227,10 @@ console.log(artists[8]);
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-  for(let i = 0; i < artists.length; i++){
-    if(artists === id || name){
-      return getArtistByIndex;
-    }
-  }
-}
-  
+function getArtistByIndex(artists, index) {
+  const artistsByIndex = artists[index];
+  return ` The artists at index ${index} is ${artistsByIndex.name}`
+  }  
   console.log(getArtistByIndex(artists[0]["name"]));
 
 
@@ -246,12 +242,15 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+  function removeArtist(artists, index) {
+    const removeArtistsByIndex = artists[index].splice
+    
+    return removeArtist;
   }
-  
+   removeArtist(artists,[0]);
+   console.log(artists)
   /**
-
+  
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
