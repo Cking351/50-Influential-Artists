@@ -207,12 +207,17 @@ const artists = [
 
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
-console.log(artists[8]);
-console.log(artists.bio);
+console.log(artists[0]["name"]);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-artists.id[8].length;
-console.log(artists);
+function changeVanGogh(){
+  for(let i = 0; i < artists.length; i++){
+    if(artists[i]["name"] === "Vincent Van Dough"){
+      return artists[i]["name"] = "Vincent Van Gogh";
+    }
+  }
+}
+console.log(artists[8]);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -223,10 +228,14 @@ console.log(artists);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(id, name) {
-   return `The artist at index ${id} is ${name}`;
+  for(let i = 0; i < artists.length; i++){
+    if(artists === id || name){
+      return getArtistByIndex;
+    }
   }
+}
   
-  console.log(getArtistByIndex(2, 2));
+  console.log(getArtistByIndex(artists[0]["name"]));
 
 
 /* Task 4: Create a function called `removeArtist` that takes two arguments:
