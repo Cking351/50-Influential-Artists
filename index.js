@@ -254,10 +254,13 @@ function getArtistByIndex(artists, index) {
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
-
-    /* Code here */
-
+function lotsOfArt(array){
+  for (let i = 0; i < artists.length; i++){
+    if (artists[i][paintings] >= 100){
+      return artists[i][names];
+    }
+  }
+console.log(lotsOfArt(artists));
   }
 
 
@@ -270,12 +273,19 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
+function addArtist(){
+  const newArray = [
+    {
+      name:'Chris',
+      years:'1995 - 15',
+      genre: 'Web Design',
+      nationality: 'American',
+      bio:'lorem ipsum'
+    }
+  ];
+  newArray.push(artists[i]);
   }
-
+console.log(artists);
 
 
 
