@@ -122,6 +122,13 @@ nav {
   margin-top: 2%;
   margin-bottom: -1%;
 }
+@media (max-width: 500px) {
+  nav {
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
 nav a {
   text-decoration: none;
   color: black;
@@ -140,6 +147,13 @@ nav a:first-of-type {
   padding-bottom: 5%;
   margin-left: 25%;
   margin-right: 25%;
+}
+@media (max-width: 500px) {
+  .title-container {
+    background-position: intial;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
 .title-container .home-container {
   color: white;
