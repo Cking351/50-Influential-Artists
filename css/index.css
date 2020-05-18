@@ -97,6 +97,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+html body {
+  height: 100%;
+}
 h2 {
   font-size: 2rem;
   margin-top: 2%;
@@ -110,7 +113,7 @@ p {
   font-weight: 600;
 }
 h1 {
-  font-size: 8rem;
+  font-size: 5rem;
   text-align: center;
   color: white;
 }
@@ -128,15 +131,19 @@ nav a {
 nav a:first-of-type {
   font-weight: bold;
 }
+.title-container {
+  background: url(/assets/home.png);
+  background-size: auto;
+  background-position: center;
+  padding-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
 .title-container .home-container {
   color: white;
-  background-size: cover;
-  background-position: center;
   width: 80%;
-  height: 100%;
   text-align: center;
-  padding: 4% 0;
-  background: url(/assets/home.png);
+  padding: 10% 0;
   margin-left: 10%;
 }
 .middle-divide {
