@@ -1,0 +1,60 @@
+.title-container{
+    background: url(/assets/home.png);
+    background-size:auto;
+    background-position:center;
+    padding-bottom: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    @media @phone{
+        margin-left:0%;
+        margin-right: 0%;
+    }
+    .home-container{
+    color:white;
+    width:80%;
+    text-align:center;
+    padding:10% 0;
+    margin-left: 10%;
+    }
+    .my-btn{
+        .btn-style(white, 6%,);
+        box-shadow: 50% 50%;
+        padding-top: 1%;
+        padding-bottom:1%;
+        padding-left: 3%;
+        padding-right: 3%
+    }
+}
+#line{
+    .middle-divide{
+      .middleLine();
+      @media @phone{
+          margin-left: 0%;
+          margin-right: 0%;
+      }
+    }
+}
+
+.artists-container{
+    display: flex;
+    justify-content: center;
+    margin-left: 8%;
+    @media @phone{
+        flex-direction: column;
+    }
+    .artist{
+        text-align: center;
+        margin-right: 10%;
+
+        .bio{
+           .set-bio();
+           @media @phone{
+            margin-left: 15%;
+           }
+        }
+    }
+}      
+
+footer{
+    margin-top: 8%;
+}
