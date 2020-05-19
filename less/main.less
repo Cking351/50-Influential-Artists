@@ -6,7 +6,6 @@
     margin-left: 25%;
     margin-right: 25%;
     @media @phone{
-        background-position: intial;
         margin-left:0%;
         margin-right: 0%;
     }
@@ -29,18 +28,33 @@
 #line{
     .middle-divide{
       .middleLine();
+      @media @phone{
+          margin-left: 0%;
+          margin-right: 0%;
+      }
     }
 }
 
 .artists-container{
     display: flex;
     justify-content: center;
+    margin-left: 8%;
+    @media @phone{
+        flex-direction: column;
+    }
     .artist{
         text-align: center;
         margin-right: 10%;
+
         .bio{
            .set-bio();
+           @media @phone{
+            margin-left: 15%;
+           }
         }
-
     }
 }      
+
+footer{
+    margin-top: 8%;
+}

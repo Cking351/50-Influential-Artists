@@ -100,10 +100,22 @@ video {
 html body {
   height: 100%;
 }
+@media (max-width: 500px) {
+  html body img {
+    width: 100%;
+    height: auto;
+  }
+}
 h2 {
   font-size: 2rem;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.3rem;
+    margin-right: 2%;
+  }
 }
 h2 a {
   text-decoration: none;
@@ -111,6 +123,12 @@ h2 a {
 }
 p {
   font-weight: 600;
+}
+@media (max-width: 500px) {
+  p {
+    padding-bottom: 30%;
+    font-size: 0.7rem;
+  }
 }
 h1 {
   font-size: 5rem;
@@ -124,7 +142,7 @@ nav {
 }
 @media (max-width: 500px) {
   nav {
-    margin-left: 30%;
+    margin-left: 1%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
@@ -150,7 +168,6 @@ nav a:first-of-type {
 }
 @media (max-width: 500px) {
   .title-container {
-    background-position: intial;
     margin-left: 0%;
     margin-right: 0%;
   }
@@ -177,9 +194,21 @@ nav a:first-of-type {
   margin-left: 8%;
   margin-right: 8%;
 }
+@media (max-width: 500px) {
+  #line .middle-divide {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
 .artists-container {
   display: flex;
   justify-content: center;
+  margin-left: 8%;
+}
+@media (max-width: 500px) {
+  .artists-container {
+    flex-direction: column;
+  }
 }
 .artists-container .artist {
   text-align: center;
@@ -189,4 +218,12 @@ nav a:first-of-type {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 1%;
+}
+@media (max-width: 500px) {
+  .artists-container .artist .bio {
+    margin-left: 15%;
+  }
+}
+footer {
+  margin-top: 8%;
 }
