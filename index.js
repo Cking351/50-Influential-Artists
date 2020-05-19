@@ -222,9 +222,9 @@ console.log(fixDogh);
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-  const targetName = id[name].name;
-  return `The artist at index ${name} is ${targetName}.`;
+function getArtistByIndex(id, index) {
+  const targetName = id[index].name;
+  return `The artist at index ${index} is ${targetName}.`;
 }
 console.log(getArtistByIndex(artists, 0));
 
@@ -251,18 +251,18 @@ console.log(artists);
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-// function lotsOfArt(artists){
-//   let newArray = []
+function lotsOfArt(artists){
+  let newArray = []
 
-//   for (let i = 0; i < artists.length; i++){
-//     if (artists[i]['paintings'] >= 100){
-//       newArray.push(artists[i])
-//     }
-//   }
-//     return newArray;
-//   }
-//   console.log(lotsOfArt(artists))
-  // Yay! I did it!
+  for (let i = 0; i < artists.length; i++){
+    if (artists[i]['paintings'] >= 100){
+      newArray.push(artists[i])
+    }
+  }
+    return newArray;
+  }
+  console.log(lotsOfArt(artists))
+  //Yay! I did it!
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
